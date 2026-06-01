@@ -9,6 +9,9 @@ import 'presentation/screens/login_screen.dart';
 import 'presentation/screens/dashboard_screen.dart';
 import 'presentation/screens/asistencia_screen.dart';
 import 'presentation/screens/inventario_screen.dart';
+import 'presentation/screens/reportes_screen.dart';
+import 'presentation/screens/clientes_screen.dart';
+import 'presentation/screens/contratos_screen.dart';
 import 'presentation/providers/auth_provider.dart';
 
 void main() async {
@@ -28,6 +31,9 @@ final _router = GoRouter(
     GoRoute(path: '/dashboard', builder: (_, __) => const DashboardScreen()),
     GoRoute(path: '/asistencia', builder: (_, __) => const AsistenciaScreen()),
     GoRoute(path: '/inventario', builder: (_, __) => const InventarioScreen()),
+    GoRoute(path: '/contratos', builder: (_, __) => const ContratosScreen()),
+    GoRoute(path: '/clientes', builder: (_, __) => const ClientesScreen()),
+    GoRoute(path: '/reportes', builder: (_, __) => const ReportesScreen()),
   ],
 );
 
